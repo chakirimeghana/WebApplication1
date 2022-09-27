@@ -1,5 +1,5 @@
 ﻿@Code
-    ViewData("Title") = "About"
+    ViewData("Title") = "azure"
 End Code
 
 <h2>@ViewData("Title").</h2>
