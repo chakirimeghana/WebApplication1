@@ -42,3 +42,12 @@ steps:
     extraProperties: |
       sonar.projectKey=vtu6917_WebApplication1
       sonar.projectName=WebApplication1
+      - task: SonarCloudPublish@1
+        inputs:
+          pollingTimeoutSec: '300'
+- task: SonarCloudAnalyze@1
+  inputs:
+    jdkversion: 'JAVA_HOME_17_X64'
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
